@@ -13,7 +13,7 @@ load_dotenv(dotenv_path=ENV_PATH)
 class PDFReport(FPDF):
     def header(self):
         self.set_font('Arial', 'B', 20)
-        self.cell(0, 10, HOSPITAL_NAME, border=0, ln=1, align='C')
+        self.cell(0, 10, "SK HOSPITAL", border=0, ln=1, align='C')
         self.set_font('Arial', '', 10)
         self.cell(0, 5, f"Report Date: {datetime.datetime.now().strftime('%Y-%m-%d')}",
                   border=0, ln=1, align='R')

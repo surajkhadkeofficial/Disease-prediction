@@ -3,7 +3,6 @@ import sqlite3
 class Database:
     DB_FILE = "hospital_records.db"
 
-    # Added 'email' to the schema
     COLUMNS = [
         ("id",         "INTEGER PRIMARY KEY AUTOINCREMENT"),
         ("name",       "TEXT NOT NULL"),
