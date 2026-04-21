@@ -1,1 +1,27 @@
+# Environments
 .env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# SQLite Database (Protecting patient data)
+*.db
+*.sqlite
+*.sqlite3
+hospital_records.db
+
+# Generated PDF Reports
+reports/
+*.pdf
+
+# Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
